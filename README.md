@@ -18,4 +18,28 @@ ps:内容由作者整理公司代码、网络上的基础规范和在实际开�
              public let APP_COLOR_BACKGROUND = UIColor(rgb: 0xdddddd)
 ##### 命名选择使用功能和意思相近的英文单词或者组合，适当时候可以选测前缀区分变量的作用范围。
 ### 注释的规范
+##### 代码中单行注释，一些属性使用“//”
+        例如：var isLine = true //是否在线，true在线、false离线
+              // 回传信息        
+              var backBlockValue:((String) ->())?
+##### 一个方法有多个参数或者有返回值是可以在方法前添加“/* …… */”
+        例如：
+        /**
+        tableViewCell内容及样式
+     
+         - parameter tableView: 表试图
+         - parameter indexPath: 单元个数
+     
+         - returns: 返回Cell内容及样式
+         */
+        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell 
+        {
+                let cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "Cell")
+                return cell
+        }
+##### 代码整体结构层次可使用“//MARK: ****”
+        例如：在代码中写入可区分不同内容，提高程序阅读性
+        //MARK: - UITableViewDataSource
+        //MARK: - UITextFieldDelegate
+##### 代码中有需要调整的内容需要标记可使用“//TODU: ****”
 
