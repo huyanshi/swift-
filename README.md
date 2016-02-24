@@ -41,7 +41,7 @@ ps:内容由作者整理公司代码、网络上的基础规范和在实际开�
         例如：在代码中写入可区分不同内容，提高程序阅读性
         //MARK: - UITableViewDataSource
         //MARK: - UITextFieldDelegate
-        ![](https://github.com/huyanshi/swift-/blob/master/img/MARK.png)
+![](https://github.com/huyanshi/swift-/blob/master/img/MARK.png)
 ##### 代码中没有完成还需要处理可使用“//TODO: ****”
         例如：
         //TODO: 闭包函数返回信息内容
@@ -49,7 +49,7 @@ ps:内容由作者整理公司代码、网络上的基础规范和在实际开�
         weakSelf!.sendRequest()
         tableView.reloadData()
         }
-        ![](https://github.com/huyanshi/swift-/blob/master/img/TODO.png)
+![](https://github.com/huyanshi/swift-/blob/master/img/TODO.png)
 ##### 后期调整或者修改代码可使用“//FIXME: ****”
         例如：
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
