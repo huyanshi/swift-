@@ -41,5 +41,22 @@ ps:内容由作者整理公司代码、网络上的基础规范和在实际开�
         例如：在代码中写入可区分不同内容，提高程序阅读性
         //MARK: - UITableViewDataSource
         //MARK: - UITextFieldDelegate
-##### 代码中有需要调整的内容需要标记可使用“//TODU: ****”
+##### 代码中没有完成还需要处理可使用“//TODO: ****”
+        例如：
+        //TODO: 闭包函数返回信息内容
+        detailVC.backValue = {(value:String) in
+        weakSelf!.sendRequest()
+        tableView.reloadData()
+        }
+##### 后期调整或者修改代码可使用“//FIXME: ****”
+        例如：
+        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cellIdentifier = "CellIdentifier"
+        let cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier(cellIdentifier,forIndexPath: indexPath) as? UITableViewCell
+        //FIXME: 修改bug
+        let row = indexPath.row
+        let rowDict = self.listTeams[row] as [String:String]
+        ...
+        return cell
+    }
 
